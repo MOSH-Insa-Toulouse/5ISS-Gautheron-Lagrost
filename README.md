@@ -10,7 +10,7 @@ This repository aims at explaining our work on this system.
 
 SGS24ISS is the name we decided to give to our homemade gas sensor. It stands for "Smart Gas Sensor 2024 Innovative Smart Systems".
 
-![Block diagram]("https://github.com/Timanoin/lora_app/tree/main/__Images/MOSH_diagram.png" "Block diagram")
+![Alt text]("./__Images/MOSH_diagram.png?raw=true")
 
 ## 🧑‍🔬 Sensor design and creation
 
