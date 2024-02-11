@@ -1730,6 +1730,9 @@
   (gr_line (start 100 44.12) (end 169.85 44.12)
     (stroke (width 0.15) (type solid)) (layer "Edge.Cuts") (tstamp 6fef40a2-9c09-4d46-b120-a8241120c43b))
 
+  (segment (start 112.065 58.09) (end 115.24 61.265) (width 0.8) (layer "F.Cu") (net 1) (tstamp b7e2d227-d859-4d16-a981-f519733c6c34))
+  (via (at 115.24 61.265) (size 0.6) (drill 0.4) (layers "F.Cu" "B.Cu") (net 1) (tstamp 9bb40f42-7149-4406-a4b9-f0da239056a2))
+  (via (at 112.065 58.09) (size 0.6) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 1) (tstamp 9ffd7392-c7c7-4224-9261-150b746a969b))
   (segment (start 150.78 87.34) (end 152.08 86.04) (width 1.2) (layer "B.Cu") (net 1) (tstamp 7042a66c-14e1-408b-ba65-db390595cb28))
   (segment (start 150.78 87.34) (end 149.53 87.34) (width 1.2) (layer "B.Cu") (net 1) (tstamp c16a0c5c-66de-4dd7-bb1d-97716e7e3a30))
   (segment (start 138.1 54.28) (end 138.11 54.29) (width 0.8) (layer "B.Cu") (net 3) (tstamp 020a9082-ed78-4977-addc-49ce511934f6))
