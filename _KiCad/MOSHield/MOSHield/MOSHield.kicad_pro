@@ -46,7 +46,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.7999999999999999
         }
       },
       "diff_pair_dimensions": [
@@ -204,7 +204,9 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "simulation_model_issue|2362200|609600|80ca3d87-aa0e-45b1-bc2a-c6948fabd21e|00000000-0000-0000-0000-000000000000|||"
+    ],
     "meta": {
       "version": 0
     },
@@ -498,13 +500,26 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Power_GND",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "POWER_+5",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "POWER_+5",
+        "pattern": "VCC"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "MOSHield.net",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
@@ -537,7 +552,7 @@
     "meta": {
       "version": 1
     },
-    "net_format_name": "",
+    "net_format_name": "KiCad",
     "ngspice": {
       "fix_include_paths": true,
       "fix_passive_vals": false,

@@ -1,0 +1,21 @@
+Circuit: * C:\Users\arthu\Documents\TRAVAIL\5A_ISS\MOSH\lora_app\_LTSpice\TransimpedanceAmpStage.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Fri Dec 08 09:00:44 2023
+Total elapsed time: 0.113 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 8312
+traniter = 8290
+tranpoints = 4146
+accept = 2678
+rejected = 1468
+matrix size = 16
+fillins = 5
+solver = Normal
+Matrix Compiler1: 710 bytes object code size  0.1/0.1/[0.0]
+Matrix Compiler2: off  [0.1]/0.1/0.1
+
