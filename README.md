@@ -58,6 +58,28 @@ The resulting PCB is pretty small, but it could be even smaller if another MCU w
 
 ## 💻 Arduino Uno Embedded Software
 
+![image](https://github.com/Timanoin/lora_app/assets/98876403/4e5acb57-a9dc-42cc-afac-33d0f14be94c)
+
+We first set up our LoRa communication and we initialize the pins for the sensor and the Uart to communicate with our chip. Thus we have two serial communications, “Serial” between the computer and the Arduino and “mySerial” between the Arduino and the RN2483A. We also define the threshold on the sensor value above which we start transmitting our data, meaning that the gas quantity is dangerous. 
+
+![image](https://github.com/Timanoin/lora_app/assets/98876403/a18c415c-439f-4f30-bd52-4ef8315dd422)
+
+In order to communicate by LoRa we have to set it up. We wait for our RN2483A to start and check if we can communicate by LoRa. To this end, we print the Hardware EUI (HWEUI) which is the ID of our RN2483 and that we need to register our device on Chirpstack. 
+
+![image](https://github.com/Timanoin/lora_app/assets/98876403/b05e7eb9-a31d-4d69-bc57-612b621fdbb6)
+
+We now have to establish communication with Chirpstack using the Over The Air Authentication (OTAA) method to connect to the network. To this end, we need the appEui and the appKey found on the Chirpstack website when registering our device. and the function ”initOTAA(appEui, appKey)” to connect. 
+
 ## 📻 ChirpStack
 
+![image](https://github.com/Timanoin/lora_app/assets/98876403/3e1e3e8b-cb16-41cc-9fba-1be5084f2501)
 
+![image](https://github.com/Timanoin/lora_app/assets/98876403/cbb793ac-0ec2-4359-90f3-4918f7be49a9)
+
+On the Chirp Stack side, we create a profile and add a device to get the JoinEui ( = appEui) and the appKey. 
+Once we are connected we can start sending the data from our sensor. 
+As specified at the beginning, we only send data when an overshoot to the threshold happens. 
+
+![image](https://github.com/Timanoin/lora_app/assets/98876403/9c804b28-e1ef-4e0b-9ba6-f39b3cea4d68)
+
+We can see that we are connected to Chirpstack, our device is enabled and sending data in ASCII 
